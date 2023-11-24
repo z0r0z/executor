@@ -7,4 +7,9 @@ interface IExecutor {
         external
         payable
         returns (bytes memory result);
+
+    function delegateExecute(address target, bytes calldata data)
+        external
+        payable
+        returns (bytes memory result);
 }
